@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:meeproject/Screens/loginscreen.dart';
 import 'package:meeproject/show_current_location.dart';
 import 'locations.dart' as locations;
 import 'maps.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       title: 'Flutter Demo',
-      home: Maps(),
+      home: LoginScreen(),
     );
   }
 }

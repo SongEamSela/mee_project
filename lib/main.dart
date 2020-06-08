@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:meeproject/Screens/loginscreen.dart';
-import 'package:meeproject/show_current_location.dart';
-import 'locations.dart' as locations;
-import 'maps.dart';
+import 'package:meeproject/Screens/locationscreen.dart';
+import 'package:meeproject/services/location_service.dart';
+import 'package:meeproject/test_file/location_update.dart';
+import 'package:meeproject/test_file/show_current_location.dart';
+import 'package:provider/provider.dart';
+import 'Screens/signupscreen.dart';
+import 'datamodels/user_location.dart';
+import 'test_file/get_location.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,11 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      title: 'Flutter Demo',
-      home: LoginScreen(),
+          theme: ThemeData(
+          primarySwatch: Colors.blue,
+          ),
+          title: 'Flutter Demo',
+          home: SignupScreen(),
     );
   }
 }

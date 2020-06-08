@@ -170,6 +170,8 @@ PODS:
     - Flutter
   - cloud_firestore_web (0.1.0):
     - Flutter
+  - device_id (0.0.1):
+    - Flutter
   - Firebase/Auth (6.23.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.5.2)
@@ -241,7 +243,12 @@ PODS:
   - Flutter (1.0.0)
   - flutter_plugin_android_lifecycle (0.0.1):
     - Flutter
-  - geolocator (5.3.1):
+  - geoflutterfire (0.0.1):
+    - Flutter
+  - geolocation (0.0.1):
+    - Flutter
+    - streams_channel
+  - "geolocator (5.3.2+2)":
     - Flutter
   - google_api_availability (2.0.4):
     - Flutter
@@ -302,7 +309,7 @@ PODS:
   - leveldb-library (1.22)
   - location (0.0.1):
     - Flutter
-  - location_permissions (2.0.5):
+  - location_permissions (3.0.0):
     - Flutter
   - location_web (0.0.1):
     - Flutter
@@ -311,23 +318,32 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - "permission_handler (5.0.0+hotfix.8)":
+    - Flutter
   - PromisesObjC (1.2.8)
+  - streams_channel (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
   - cloud_firestore_web (from `.symlinks/plugins/cloud_firestore_web/ios`)
+  - device_id (from `.symlinks/plugins/device_id/ios`)
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_auth_web (from `.symlinks/plugins/firebase_auth_web/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_core_web (from `.symlinks/plugins/firebase_core_web/ios`)
   - Flutter (from `Flutter`)
   - flutter_plugin_android_lifecycle (from `.symlinks/plugins/flutter_plugin_android_lifecycle/ios`)
+  - geoflutterfire (from `.symlinks/plugins/geoflutterfire/ios`)
+  - geolocation (from `.symlinks/plugins/geolocation/ios`)
   - geolocator (from `.symlinks/plugins/geolocator/ios`)
   - google_api_availability (from `.symlinks/plugins/google_api_availability/ios`)
   - google_maps_flutter (from `.symlinks/plugins/google_maps_flutter/ios`)
   - location (from `.symlinks/plugins/location/ios`)
   - location_permissions (from `.symlinks/plugins/location_permissions/ios`)
   - location_web (from `.symlinks/plugins/location_web/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - streams_channel (from `.symlinks/plugins/streams_channel/ios`)
 
 SPEC REPOS:
   trunk:
@@ -359,6 +375,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/cloud_firestore/ios"
   cloud_firestore_web:
     :path: ".symlinks/plugins/cloud_firestore_web/ios"
+  device_id:
+    :path: ".symlinks/plugins/device_id/ios"
   firebase_auth:
     :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_auth_web:
@@ -371,6 +389,10 @@ EXTERNAL SOURCES:
     :path: Flutter
   flutter_plugin_android_lifecycle:
     :path: ".symlinks/plugins/flutter_plugin_android_lifecycle/ios"
+  geoflutterfire:
+    :path: ".symlinks/plugins/geoflutterfire/ios"
+  geolocation:
+    :path: ".symlinks/plugins/geolocation/ios"
   geolocator:
     :path: ".symlinks/plugins/geolocator/ios"
   google_api_availability:
@@ -383,16 +405,21 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/location_permissions/ios"
   location_web:
     :path: ".symlinks/plugins/location_web/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+  streams_channel:
+    :path: ".symlinks/plugins/streams_channel/ios"
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   cloud_firestore: 56ea1a42d4a4b3c9cf22e0e0f73140b5d07376a8
   cloud_firestore_web: 9ec3dc7f5f98de5129339802d491c1204462bfec
+  device_id: 4a0bf078741a3eec6ba0e6cc72e786395d5991b0
   Firebase: 585ae467b3edda6a5444e788fda6888f024d8d6f
   firebase_auth: f8287325aae894aff045dff38bf0667cbeb49563
   firebase_auth_web: 0955c07bcc06e84af76b9d4e32e6f31518f2d7de
-  firebase_core: 0d8be0e0d14c4902953aeb5ac5d7316d1fe4b978
+  firebase_core: 335c02abd48672b7c83c683df833d0488a72e73e
   firebase_core_web: d501d8b946b60c8af265428ce483b0fff5ad52d1
   FirebaseAnalytics: 558f7a03d19de451093032c806f39d5f9dff096e
   FirebaseAuth: e50319ecc114acf93c2b9581e15d6604ddd7eeb2
@@ -404,7 +431,9 @@ SPEC CHECKSUMS:
   FirebaseInstallations: 2119fb3e46b0a88bfdbf12562f855ee3252462fa
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_plugin_android_lifecycle: dc0b544e129eebb77a6bfb1239d4d1c673a60a35
-  geolocator: 460cc8e850b616f8c0e90944c86517d91ccbb686
+  geoflutterfire: 2a6493e01fb6eef1a6c9046b1baf9a943d0c5ffe
+  geolocation: c194aabfd0f48cd7d6041afa8ba6542aa5714dc2
+  geolocator: f7622e0e7e2a24718285b73916d60c4a54b9f5b6
   google_api_availability: 15fa42a8cd83c0a6738507ffe6e87096f12abcb8
   google_maps_flutter: df4e7de95264aa0a2f11aac0fc7e313acb8ffc7e
   GoogleAppMeasurement: 2253e99c1f22638cf234c059144660c338ad76c3
@@ -417,10 +446,12 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   location: 3a2eed4dd2fab25e7b7baf2a9efefe82b512d740
-  location_permissions: 4a49d4e5bec5b653643e551ab77963cc99bb0e4a
+  location_permissions: 42abd62dcc866b92e06506772d2cc42d14be7bb0
   location_web: b94e7433cfe28c0f7c8923c2ee482824b32e55a7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  permission_handler: c2a19c5cb3ed2d7054fc4baa8ff1b86f5dcfedfd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  streams_channel: 16855ffd0568eded9563b2fec6a1bfa94420b353
 
 PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
 
